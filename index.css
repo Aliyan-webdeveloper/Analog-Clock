@@ -21,6 +21,16 @@ body{
     width:inherit;
 
 }
+.circle{
+    position: absolute;
+    top:44% ;
+    right: 45%;
+    border-radius: 10px;
+    z-index: 1;
+    width: 7%;
+    height: 7%;
+    background-color: gray;
+}
 
 #hours{
     /* display: none; */
@@ -56,3 +66,4 @@ body{
     top: 13%;
     right: 48%;
 }
+

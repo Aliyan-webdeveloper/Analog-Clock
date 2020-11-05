@@ -4,18 +4,17 @@
 }
 body{
     display: flex;
-    margin-top: -200px;
-    height: 100vh;
     background: url(image/photo2.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:initial;
 }
 #clock-container{
-    object-fit: cover;
-
-    display: flex;
-    justify-content: flex-end;
-    width: 15vw;
+    width: 25vw;
     margin: auto;
     position: relative;
+    left: 22%;
+    top: 50px;
 }
 #clock-container img{
     width:inherit;
@@ -25,7 +24,7 @@ body{
     position: absolute;
     top:44% ;
     right: 45%;
-    border-radius: 10px;
+    border-radius:50%;
     z-index: 1;
     width: 7%;
     height: 7%;
@@ -65,5 +64,18 @@ body{
     position: absolute;
     top: 13%;
     right: 48%;
+}
+@media only screen and (max-width: 575px){
+    body{
+        height: 100vh;
+        background-size: 100vh 100%;
+        background-position: 50% center;
+    }
+    #clock-container{
+        width: 100%;
+        left: 0;
+        top: -30%;
+        max-width: 200px;
+    }
 }
 
